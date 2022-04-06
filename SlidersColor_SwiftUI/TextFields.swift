@@ -36,7 +36,6 @@ struct TextFields: View {
     private func checkValue() {
         if let value = Int(textValue), (0...255).contains(value) {
             self.value = Double(value)
-            return
         } else {
             showAlert.toggle()
             self.value = 0

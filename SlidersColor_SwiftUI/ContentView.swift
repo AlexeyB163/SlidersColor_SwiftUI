@@ -32,7 +32,9 @@ struct ContentView: View {
                         Sliders(sliderValue: $sliderRedValue, textValue: String(sliderRedValue), colorSlider: .red)
                             .focused($isInputActive)
                         Sliders(sliderValue: $sliderGreenValue, textValue: String(sliderGreenValue), colorSlider: .green)
+                            .focused($isInputActive)
                         Sliders(sliderValue: $sliderBlueValue, textValue: String(sliderBlueValue), colorSlider: .blue)
+                            .focused($isInputActive)
                     }
                 } 
             .padding()
